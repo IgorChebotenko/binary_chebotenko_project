@@ -16,6 +16,17 @@ namespace binary_chebotenko_project
         {
             Console.WriteLine("Binary");
         }
+        public void TestLogic(int number)
+        {
+            int sum = 0;
+            while(number!=0)
+            {
+                sum += number % 10;
+                number /= 10;
+               
+            }
+            Console.WriteLine("The sum of digits={0}", sum);
+        }
     }
     class Program
     {
@@ -24,6 +35,7 @@ namespace binary_chebotenko_project
             Test test = new Test();
             test.Test1();
             test.Test2();
+           
         }
     }
 }
