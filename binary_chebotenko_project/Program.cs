@@ -35,7 +35,9 @@ namespace binary_chebotenko_project
             Test test = new Test();
             test.Test1();
             test.Test2();
-           
+            test.TestLogic(123);
+
+
         }
     }
 }
